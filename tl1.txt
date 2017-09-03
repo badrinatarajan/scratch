@@ -11,3 +11,26 @@ sudo apt-get install zlib1g-dev
 
 cd /home/ubuntu/nginx/nginx-1.11.3
 ./configure
+make
+sudo make install
+(default /usr/local/nginx)
+
+
+-------
+Reload:
+/usr/local/nginx/sbin/nginx -s reload
+
+
+
+--------
+/usr/bin/nginx -t -c ~/mynginx.conf -g "pid /var/run/nginx.pid; worker_processes 2;"
+Options
+-?, -h	Print help.
+-v	Print version.
+-V	Print NGINX version, compiler version and configure parameters.
+-t	Don’t run, just test the configuration file. NGINX checks configuration for correct syntax and then try to open files referred in configuration.
+-q	Suppress non-error messages during configuration testing.
+-s signal	Send signal to a master process: stop, quit, reopen, reload. (version >= 0.7.53)
+-p prefix	Set prefix path (default: /usr/local/nginx/). (version >= 0.7.53)
+-c filename	Specify which configuration file NGINX should use instead of the default.
+-g directives	Set global directives. (version >= 0.7.4)
