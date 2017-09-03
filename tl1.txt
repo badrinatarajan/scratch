@@ -1,0 +1,13 @@
+Install nginx from source:
+-----------------------------
+Install C/C++ compiler:
+sudo apt-get install build-essentials
+
+Install pcre:
+sudo apt-get install libpcre3 libpcre3-dev
+
+Install zlib
+sudo apt-get install zlib1g-dev
+
+cd /home/ubuntu/nginx/nginx-1.11.3
+./configure
