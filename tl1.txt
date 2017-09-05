@@ -34,3 +34,11 @@ Options
 -p prefix	Set prefix path (default: /usr/local/nginx/). (version >= 0.7.53)
 -c filename	Specify which configuration file NGINX should use instead of the default.
 -g directives	Set global directives. (version >= 0.7.4)
+
+
+tail -F /usr/localnginx/{access,error}9[012].log 
+
+-----------------
+http://nginx.org/en/docs/beginners_guide.html
+https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching
+https://forum.nginx.org/read.php?2,215830,215979#msg-215979
